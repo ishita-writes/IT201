@@ -13,6 +13,6 @@ class OddEven
     {
         OddEven obj = new OddEven();
         obj.num = 45;
-        obj.check;
+        obj.check();
     }
 }
