@@ -6,7 +6,7 @@ class Adder
         System.out.println("Sum = "+(a+b));
     }
 
-    public void static void(String args[])
+    public static void main(String[]args)
     {
         Adder obj = new Adder();
         obj.a = 5;
