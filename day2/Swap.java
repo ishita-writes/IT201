@@ -1,7 +1,7 @@
 class Swap
 {
     int a, b;
-    Swapper(int x, int y)
+    Swap(int x, int y)
     {
         a = x;
         b = y;
@@ -13,7 +13,7 @@ class Swap
         System.out.println("After Swapping = "+b+" "+a);
     }
 
-    public static void main(Stirng args[])
+    public static void main(String args[])
     {
         Swap obj1 = new Swap(5,6);
         obj1.Swapper();
