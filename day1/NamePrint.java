@@ -1,4 +1,4 @@
-class Name
+class NamePrint
 {
     String name; 
     void PrintName()
