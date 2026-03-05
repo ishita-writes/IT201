@@ -1,7 +1,7 @@
 class PlusMinus
 {
     int val;
-    PLusMinus(int n)
+    PlusMinus(int n)
     {
         val = n;
     }
