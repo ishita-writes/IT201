@@ -12,13 +12,13 @@ class MaxThree
     {
         if (l >= m && l >= n)
             System.out.println("The greatest value = "+l);
-        elif (m >= l && m >= n)
+        if (m >= l && m >= n)
             System.out.println("The greatest value = "+m);
         else
             System.out.println("The greatest value = "+n);    
     }
 
-    public staitc void main(String args[])
+    public static void main(String args[])
     {
         MaxThree obj1 = new MaxThree(5, 2, 8);
         obj1.Find();
