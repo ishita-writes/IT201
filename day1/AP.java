@@ -9,7 +9,7 @@ class AP
 
     public static void main(String args[])
     {
-        Ap obj = new AP();
+        AP obj = new AP();
         obj.length = 8;
         obj.breadth = 4;
         obj.calc();
