@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 interface Department {
     String deptName = "Computer Science", deptHead = "Dr. Smith";
