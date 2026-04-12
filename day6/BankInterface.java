@@ -32,24 +32,19 @@ class Account extends Customer implements Bank
     }
 
     @Override
-    public void transaction(double amount, int option)
-    {
-        if (option == 1) // depositing
-        {
+    public void transaction(double amount, int option){
+        if (option == 1) {
             balance += amount;
             System.out.println("Amount deposited : "+amount);
         }
-        else if (option == 2) // withdrawing
-        {
-            if (balance <= amount)
-            {
+        else if (option == 2) {
+            if (balance <= amount){
                 balance -= amount;
                 System.out.println("Withdrawn Rs."+amount);
             }
             else
                 System.out.println("Insufficient Funds");
         }
-
     }
 
     @Override
@@ -63,15 +58,12 @@ class Account extends Customer implements Bank
     }
 }
 
-public class BankInterface
-{
-    public static void main(String[] args)
-    {
+public class BankInterface {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Account myAcc = new Account("Jensen Winchester", "CUST2006", 543256743, 34500.50);
         int option;
-        do
-        {
+        do {
             System.out.println("1. View Account Information 2. Deposit 3. Withdraw 4. Exit");
             System.out.println("Enter the choice : ");
             option = sc.nextInt();
