@@ -1,13 +1,11 @@
 import java.util.Scanner;
-interface Bank // customer and account classes
-{
+interface Bank {
     String BANK_NAME = "HDFC Bank";
     void transaction(double amount, int option);
     void displayBalance();
 }
 
-class Customer // base class
-{
+class Customer {
     protected String name;
     protected String CustomerID;
     public Customer(String name, String CustomerID)
@@ -16,15 +14,13 @@ class Customer // base class
         this.CustomerID = CustomerID;
     }
 
-    public void displayProfile()
-    {
+    public void displayProfile(){
         System.out.println("Customer Name : "+name);
         System.out.println("Customer ID : "+CustomerID);
     }
-
 }
 
-class Account extends Customer implements Bank// derived class
+class Account extends Customer implements Bank
 {
     protected long AccNo;
     protected double balance;
