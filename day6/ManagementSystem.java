@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 interface Department {
     String deptName = "Computer Science", deptHead = "Dr. Smith";
